@@ -1,13 +1,17 @@
+//Pede as informacoes para comercar a calcular
 var a = parseFloat(prompt("Informe o A da equcação: ax2 + bx + c"));
 var x1;
 var x2;
+var raiz;
 
+//Verifica se o valor for 0, se for 0 para o codigo
 if(a == 0){
 
     alert("Está não é uma equação de segundo grau, portanto não iremos continuar.");
     console.log("Está não é uma equação de segundo grau, portanto não iremos continuar.");
 }
 
+//Comeca a realizar o codigo
 else if(a != 0){
     
     var b = parseFloat(prompt("Informe o B da equcação: ax2 + bx + c"));
