@@ -27,5 +27,39 @@ else if(number < 1000){
     dezena = parseInt(dezena);
     unidade = parseInt(unidade);
 
-    alert(centena + ", " + dezena + ", " + unidade)
+    //comeca as decisoes para verificar e apresentar para o usuario a resposta
+    if(centena != 0 && dezena != 0 && unidade != 0){
+        alert("São: \n" + centena + " centenas.\n" + dezena + " dezenas.\n" + unidade + " unidades.");
+        console.log("São: \n" + centena + " centenas.\n" + dezena + " dezenas.\n" + unidade + " unidades.");
+    }
+
+    else if(centena != 0 && dezena == 0 && unidade != 0){
+        alert("São: \n" + centena + " centenas.\n" + unidade + " unidades.");
+        console.log("São: \n" + centena + " centenas.\n" + unidade + " unidades.");
+    }
+
+    else if(centena != 0 && dezena != 0 && unidade == 0){
+        alert("São: \n" + centena + " centenas.\n" + dezena + " dezenas.");
+        console.log("São: \n" + centena + " centenas.\n" + dezena + " dezenas.");
+    }
+
+    else if(centena != 0 && dezena == 0 && unidade == 0){
+        alert("São: \n" + centena + " centenas.");
+        console.log("São: \n" + centena + " centenas.");
+    }
+
+    else if(centena == 0 && dezena != 0 && unidade != 0){
+        alert("São: \n" + dezena + " dezenas.\n" + unidade + " unidades.");
+        console.log("São: \n" + dezena + " dezenas.\n" + unidade + " unidades.");
+    }
+
+    else if(centena == 0 && dezena != 0 && unidade == 0){
+        alert("São: \n" + dezena + " dezenas.");
+        console.log("São: \n" + dezena + " dezenas.");
+    }
+
+    else if(centena == 0 && dezena == 0 && unidade != 0){
+        alert("São: \n" + unidade + " unidades.");
+        console.log("São: \n" + unidade + " unidades.");
+    }
 }
